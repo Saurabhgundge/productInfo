@@ -17,6 +17,5 @@ namespace ProductDetailProject.Models
         [Required]
         public string CategoryName { get; set; }
 
-        public CategoryTable() { }
     }
 }

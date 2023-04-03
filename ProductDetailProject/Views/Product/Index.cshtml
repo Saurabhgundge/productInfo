@@ -47,7 +47,7 @@
     </table>
 
     <div>
-        page @(Model.PageCount <Model.PageNumber ?0:Model.PageNumber)/@Model.PageCount)
+        page @(Model.PageCount <Model.PageNumber ?0:Model.PageNumber)/@Model.PageCount
     </div>
     <div>
         @Html.PagedListPager(Model, page => Url.Action("Index", new {page=page}))

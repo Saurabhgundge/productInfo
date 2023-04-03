@@ -14,6 +14,7 @@
 <body class="image">
 
     <center><h2><u>Category Table</u></h2></center>
+    
     <h4>
         <b>
             @Html.ActionLink("Insert New", "Insert")
@@ -41,7 +42,7 @@
     </table>
 
     <div>
-        page @(Model.PageCount <Model.PageNumber ?0:Model.PageNumber)/@Model.PageCount)
+        page @(Model.PageCount <Model.PageNumber ?0:Model.PageNumber)/@Model.PageCount
     </div>
     <div>
         @Html.PagedListPager(Model, page => Url.Action("Index", new { page = page }))

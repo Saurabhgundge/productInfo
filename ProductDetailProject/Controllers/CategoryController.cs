@@ -36,10 +36,11 @@ namespace ProductDetailProject.Controllers
         [HttpPost]
         public ActionResult Insert(CategoryTable ct)
         {
-
-            db.CategoryTable.Add(ct);
-            db.SaveChanges();
-            return RedirectToAction("Index", "Category");
+                db.CategoryTable.Add(ct);
+                db.SaveChanges();
+                return RedirectToAction("Index", "Category");
+              
+            
         }
 
 

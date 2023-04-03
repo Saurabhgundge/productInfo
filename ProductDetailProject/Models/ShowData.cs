@@ -15,7 +15,5 @@ namespace ProductDetailProject.Models
         public int CategoryId { get; set; }
         public string CategoryName { get; set; }
 
-        public ShowData()
-        { }
     }
 }
