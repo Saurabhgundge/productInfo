@@ -17,5 +17,9 @@ namespace ProductDetailProject.Models
         [Required]
         public string CategoryName { get; set; }
 
+        
+        public int? ProductId { get; set; }
+        [ForeignKey("ProductId")]
+        public virtual ProductTable ProductTable { get; set; }
     }
 }

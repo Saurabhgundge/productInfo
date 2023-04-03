@@ -7,13 +7,13 @@ namespace ProductDetailProject.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.4.4")]
-    public sealed partial class pro_app : IMigrationMetadata
+    public sealed partial class fkadded : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(pro_app));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(fkadded));
         
         string IMigrationMetadata.Id
         {
-            get { return "202303310613518_pro_app"; }
+            get { return "202304030622356_fkadded"; }
         }
         
         string IMigrationMetadata.Source

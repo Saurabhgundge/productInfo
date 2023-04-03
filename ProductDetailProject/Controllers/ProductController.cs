@@ -96,16 +96,16 @@ namespace ProductDetailProject.Controllers
         {
             int pageNumber = page ?? 1;
             int pageSize = 10;
-            var ProductTable = (from pt in db.ProductTable
+            var productlist = (from pt in db.ProductTable
                                 join ct in db.CategoryTable on pt.CategoryId equals ct.CategoryId
-                                select new ShowData
+                               select new ShowData
                                 {
                                     ProductId = pt.ProductId,
                                     ProductName = pt.ProductName,
                                     CategoryId = ct.CategoryId,
                                     CategoryName = ct.CategoryName
                                 }).OrderBy(pt => pt.CategoryId).ToPagedList(pageNumber, pageSize);
-            return View(ProductTable);
+            return View(productlist);
 
           
 
